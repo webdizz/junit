@@ -11,4 +11,4 @@ install:
 script:
   bundle exec buildr clean test:'-SimpleTest,-WasRun,-junit.tests.framework.*,-RuleChainTest,-TestWatchmanTest,-WithUnresolvedGenericTypeVariablesOnTheoryParms'
 after_success:
-  bundle exec buildr package
+  bundle exec buildr package test=no
