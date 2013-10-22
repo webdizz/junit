@@ -1,11 +1,8 @@
-VERSION_NUMBER = "4.11"
-GROUP = "junit"
+repositories.remote << 'http://repo1.maven.org/maven2'
 
-repositories.remote << "http://repo1.maven.org/maven2"
-
-define "junit" do
-  project.version = VERSION_NUMBER
-  project.group = GROUP
+define 'junit' do
+  project.version = '4.11'
+  project.group = 'junit'
   compile.with 'org.hamcrest:hamcrest-core:jar:1.3'
   test.compile.with 
   package :jar
